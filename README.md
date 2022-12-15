@@ -14,6 +14,6 @@
 
 --------------------------------
 #clone project from github
-//for install packege
+#for install packege
 1. npm i
 2. npm run dev
