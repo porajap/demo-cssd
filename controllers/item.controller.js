@@ -1,4 +1,4 @@
-import {connect} from "../config/sqlConnect.js";
+import { connect } from "../config/sqlConnect.js";
 
 export const getAll = async (req, res) => {
   try {
@@ -80,11 +80,11 @@ export const getItemAndPrice = async (req, res) => {
 };
 
 const getItem = async () => {
-    try {
-      let items = await connect.request().query("SELECT TOP 200 * from item");
+  try {
+    let items = await connect.request().query("SELECT TOP 200 * from item");
 
-      return items.recordset;
-    } catch (error) {
-      return [];
-    }
+    return items.recordset;
+  } catch (error) {
+    return [];
+  }
 };
